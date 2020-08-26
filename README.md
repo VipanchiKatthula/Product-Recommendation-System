@@ -16,6 +16,7 @@ Tokenizing, removal of stop words and stemming was done for textual data
 2. Since we are handling huge amount of data with our data frame having 5,074,160 reviews we have done rest of the operations in Apache Spark for efficient and faster handling of big data. We have created a Spark data frame from the pandas reviews data frame
 3. Next we have created a data cleaning pipeline using the Pipeline function in which we have cleaned the spark data frame by tokenizing the reviews, removing stop words, calculated the term frequencies (TF) and IDF for the tokenized words.
 4. We have clustered the products. So now whenever a new input keyword has been searched, it would pass through pipeline for cluster assignment. Products under the respective cluster are up for recommendation.
+Find the code file [here](code/KMeans_Code.ipynb)
 ![GitHub Logo](images/kmeans_result.PNG)
 ## Technique 2 – ALS Collaborative Filtering Algorithm
 1. We have obtained a Spark data frame containing item id, user id and ratings
@@ -24,6 +25,7 @@ Tokenizing, removal of stop words and stemming was done for textual data
 4. We have evaluated the model on the test data. We have got RMSE value of 1.134. We thought that it might be over fitting the data so we implemented 5-fold Cross Validation in the next step.
 5. After implementing 5-fold ALS Cross Validation and evaluating on the test data we have obtained a RMSE value of 0.8345 which showed an improvement from the previous time
 6. Finally, using our model we are obtaining TOP 10 recommendations for all the users in our data frame.
+Find the code file [here](code/ALS_code.ipynb)
 ![GitHub Logo](images/results.PNG)
 ## RESULTS AND CONCLUSION
 By analyzing our dataset through various tools like R, Python, Pyspark we developed a product recommendation system based on the customer’s interest. We have used 2 different models for this purpose i.e. K-means and ALS Collaborative Filtering.
