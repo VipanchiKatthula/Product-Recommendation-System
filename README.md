@@ -3,9 +3,9 @@
 The objective of the project is to develop a product recommendation system based on the customer’s interest. The purchase history is retrieved to capture customer’s inclination for a set of products available in the store. The data extraction, exploration, transformation and analysis would be achieved through Apache Spark system. Based on the analysis, the system would recommend products for customers who would most likely be inclined to buy a set of products along with the current product picked up for check out. This recommendation system is intended to help e-commerce web sites to service customers with appropriate recommendations at the right time with an attractive price tag.
 
 ## DATA DESCRIPTION
-The Dataset was obtained from the website: https://nijianmo.github.io/amazon/index.html
+The Dataset was obtained from the website: https://nijianmo.github.io/amazon/index.html .
 The data set is a part of Amazon review dataset released in 2014, provided by UCSD.
-The data set contains data for 287,209 products with 5,074,160 reviews and ratings by 1, 57,386 unique users.
+The data set contains data for 287,209 products with 5,074,160 reviews and ratings by 1,57,386 unique users.
 Data does not contain any null values
 We used 80% of data for training and 20% for testing.
 Tokenizing, removal of stop words and stemming was done for textual data
