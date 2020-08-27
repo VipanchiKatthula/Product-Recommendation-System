@@ -10,8 +10,8 @@
 ## TECHNOLOGIES
 Project is created with:
 
-Python - **pandas, Tokenizer**
-PySpark - **Spark, SparkSession, pyspark.sql, SQLContext, RegressionEvaluator, ALS**
+* Python - **pandas, Tokenizer**
+* PySpark - **Spark, SparkSession, pyspark.sql, SQLContext, RegressionEvaluator, ALS**
 
 ## ALGORITHMS
 * Alternating Least Squares
