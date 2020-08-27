@@ -1,8 +1,26 @@
 ![GitHub Logo](/images/intro_slide.PNG)
+### Table of contents
+* [Objective](#objective)
+* [Technologies](#technologies)
+* [Algorithms](#algorithms)
+* [Data](#data)
+* [Implementation](#implementation)
+* [Results](#results)
+
+## TECHNOLOGIES
+Project is created with:
+
+Python - **pandas, Tokenizer**
+PySpark - **Spark, SparkSession, pyspark.sql, SQLContext, RegressionEvaluator, ALS**
+
+## ALGORITHMS
+* Alternating Least Squares
+* NearestNeighbors
+
 ## OBJECTIVE
 The objective of the project is to develop a product recommendation system based on the customer’s interest. The purchase history is retrieved to capture customer’s inclination for a set of products available in the store. The data extraction, exploration, transformation and analysis would be achieved through Apache Spark system. Based on the analysis, the system would recommend products for customers who would most likely be inclined to buy a set of products along with the current product picked up for check out. This recommendation system is intended to help e-commerce web sites to service customers with appropriate recommendations at the right time with an attractive price tag.
 
-## DATA DESCRIPTION
+## DATA
 The Dataset was obtained from the website: https://nijianmo.github.io/amazon/index.html .
 The data set is a part of Amazon review dataset released in 2014, provided by UCSD.
 The data set contains data for 287,209 products with 5,074,160 reviews and ratings by 1,57,386 unique users.
@@ -10,7 +28,8 @@ Data does not contain any null values
 We used 80% of data for training and 20% for testing.
 Tokenizing, removal of stop words and stemming was done for textual data
 
-## DATA MODELLING AND CLASSIFICATION – Techniques Used Collaborative Filtering Algorithm and K-means
+## IMPLEMENTATION 
+## MODELLING AND CLASSIFICATION – Techniques Used Collaborative Filtering Algorithm and K-means
 ## Technique 1 – K-means (Context Based Filtering)
 1. Based on the reviews obtained above we have created its TF-IDF using TfidfVectorizer function.
 2. Since we are handling huge amount of data with our data frame having 5,074,160 reviews we have done rest of the operations in Apache Spark for efficient and faster handling of big data. We have created a Spark data frame from the pandas reviews data frame
@@ -27,6 +46,6 @@ Find the code file [here](code/KMeans_Code.ipynb)
 6. Finally, using our model we are obtaining TOP 10 recommendations for all the users in our data frame.
 Find the code file [here](code/ALS_code.ipynb)
 ![GitHub Logo](images/results.PNG)
-## RESULTS AND CONCLUSION
+## RESULTS
 By analyzing our dataset through various tools like R, Python, Pyspark we developed a product recommendation system based on the customer’s interest. We have used 2 different models for this purpose i.e. K-means and ALS Collaborative Filtering.
 For the K-means which does context based filtering, we have tested our model with a test data which shows products under their respective cluster. It shows the products which are closely related to Kit Kat.
