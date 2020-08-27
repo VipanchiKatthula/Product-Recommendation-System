@@ -1,5 +1,5 @@
 ![GitHub Logo](/images/intro_slide.PNG)
-### Table of contents
+### TABLE OF CONTENTS
 * [Objective](#objective)
 * [Technologies](#technologies)
 * [Algorithms](#algorithms)
